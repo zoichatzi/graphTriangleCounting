@@ -1,2 +1,3 @@
 # graphTriangleCounting
-Exact and approximate triangle counting algorithms on complex graphs
+
+In this project, we focus on exact and approximate triangle counting algorithms. We are going to implement and compare some triangle counting algorithms. More specifically, the exact algorithms are: 1) all triplets, 2) node iterator, 3) compact forward. In addition, we will implement the DOULION algorithm which sparsifies the graph and then we can use any of the previous algorithms to approximately count the triangles. Finally, we will implement a streaming algorithm that reads the edges of the graph incrementally. We are going to use the version of the TRIEST algorithm for edge insertions only (we will not implement edge deletions).
