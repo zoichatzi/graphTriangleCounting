@@ -11,6 +11,11 @@ We apply the algorithms to three SNAP datasets. More precisely, we choose two co
 
 ## Conclusions
 
+Firstly, we apply three baseline algorithms, Brute-Force, Node-Iterator, and Compact-Forward, checking the runtimes of all three, while concluding that espe-cially Brute-Force is extremely time-consuming, espe-cially for the largest, road network. We note here that the extremely small clustering coefficient of the last dataset leads to Compact-Forward demanding more time than Node-Iterator – which, in general, is much faster - that needs fewer checks of the neighbors, while additionally, as future work we would suggest trying different sorting methods for Compact-Forward as this part takes up a large amount of the process running time and we would suggest that it could reduce even more time complexity.
+
+We then apply the Doulion algorithm both with No-deIterator and Compact Forward algorithms for differ-ent values of p. The values of accuracy are high (with low variance across our runs), even in the case we keep only 10% of the edges. Regarding the speedups achieved by Doulion, the highest speedup is achieved for p=0.1, which is, in all cases, much higher than those for larger values of p. It is consistently higher when Doulion is combined with NodeIterator than with Compact Forward and the values achieved are higher as the graph gets smaller.
+
+The TRIEST algorithm for estimating the number of triangles in a graph depends on several factors, includ-ing the size of the graph, the sampling rate, and the size of the memory reservoir used by the algorithm. The relationship between these factors and accuracy can be complex and dependent on other factors, but both re-search studies and applications have shown that the algorithm can be effective and accurate in a variety of real-world settings with the appropriate tuning of these parameters. Overall, the TRIEST algorithm offers a powerful and efficient approach to triangle counting in large, dynamic graphs, and can be a valuable tool for data scientists and researchers working with network data.
 
 
 
